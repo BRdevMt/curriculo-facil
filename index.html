@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<meta name="theme-color" content="#12345a">
+<title>Currículo Fácil — Demonstração</title>
+<style>
+:root{--navy:#12345a;--blue:#1769d2;--yellow:#ffd633;--bg:#f3f6fb;--ink:#172638;--muted:#65758a;--line:#dbe4ef;--white:#fff}
+*{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Inter,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif}
+header{background:linear-gradient(120deg,#102e50,#1769d2);color:white;padding:18px 18px 22px;border-radius:0 0 24px 24px}
+.brand{display:flex;align-items:center;gap:10px;font-weight:850;font-size:21px;letter-spacing:-.5px}.logo{display:grid;place-items:center;width:38px;height:38px;border-radius:12px;background:var(--yellow);color:var(--navy);font-size:23px}
+header p{margin:12px 0 0;color:#e6f0ff;font-size:14px;line-height:1.45}
+main{max-width:760px;margin:0 auto;padding:16px 14px 32px}
+.card{background:white;border:1px solid var(--line);border-radius:20px;padding:18px;box-shadow:0 8px 26px #18385a0b;margin-bottom:14px}
+.kicker{color:var(--blue);font-size:11px;font-weight:800;letter-spacing:1.1px;text-transform:uppercase}
+h1{font-size:25px;line-height:1.15;letter-spacing:-.7px;margin:8px 0 9px;color:var(--navy)}
+h2{font-size:18px;margin:0 0 12px;color:var(--navy)}
+p{line-height:1.5}.muted{color:var(--muted);font-size:14px}
+button,.button{font:inherit;font-weight:750;border:0;border-radius:13px;padding:14px 16px;cursor:pointer;text-decoration:none;display:inline-flex;justify-content:center;align-items:center;gap:8px}
+.primary{background:var(--blue);color:white;box-shadow:0 5px 12px #1769d225}.yellow{background:var(--yellow);color:var(--navy)}.secondary{background:#edf3fa;color:var(--navy)}.outline{background:white;border:1px solid var(--line);color:var(--navy)}
+.full{width:100%}.actions{display:flex;gap:9px;margin-top:18px}.actions>*{flex:1}
+.progress{height:6px;background:#e6edf5;border-radius:9px;overflow:hidden;margin:12px 0 18px}.progress span{display:block;height:100%;background:var(--yellow);transition:width .2s}
+.step-label{display:flex;justify-content:space-between;gap:8px;color:var(--muted);font-size:12px;font-weight:700}
+label{display:block;font-size:13px;font-weight:750;margin:13px 0 6px;color:#31445b}
+input,textarea,select{width:100%;padding:13px 12px;border:1px solid #cfdae7;border-radius:11px;font:inherit;font-size:15px;color:var(--ink);background:white;outline:none}
+input:focus,textarea:focus,select:focus{border-color:var(--blue);box-shadow:0 0 0 3px #1769d218}
+textarea{min-height:88px;resize:vertical}.grid2{display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.hidden{display:none!important}.feature-list{display:grid;grid-template-columns:1fr 1fr;gap:10px;margin:18px 0}
+.feature{background:#f2f7fd;border-radius:13px;padding:12px;font-size:13px;font-weight:700;color:#25466c}.feature span{display:block;font-size:20px;margin-bottom:5px}
+.notice{background:#fff8d8;border:1px solid #f1df8b;padding:12px;border-radius:12px;font-size:12px;line-height:1.45;color:#66551b}
+.resume{background:#fff;border:1px solid #d5deea;box-shadow:0 8px 28px #18385a12;padding:23px 21px;border-radius:7px;color:#243244}
+.resume .rname{font-size:25px;letter-spacing:-.6px;font-weight:850;color:#12345a;margin:0}
+.resume .rrole{color:#1769d2;font-size:12px;font-weight:800;margin:4px 0 12px;text-transform:uppercase}
+.resume .contact{font-size:10px;color:#526174;border-top:2px solid #ffd633;padding-top:8px;line-height:1.6;overflow-wrap:anywhere}
+.resume h3{font-size:11px;letter-spacing:.7px;color:#12345a;border-bottom:1px solid #dbe4ef;padding-bottom:5px;margin:15px 0 7px;text-transform:uppercase}
+.resume p,.resume li{font-size:10px;line-height:1.5;margin:4px 0}
+.resume ul{padding-left:17px;margin:4px 0}
+footer{text-align:center;font-size:11px;color:#8390a0;padding:6px 10px 20px}
+@media(min-width:620px){main{padding-top:24px}.card{padding:24px}.resume{padding:30px}}
+@media(max-width:380px){.grid2{grid-template-columns:1fr}.actions button{padding:12px 8px;font-size:13px}.resume{padding:16px}.resume .rname{font-size:21px}}
+@media print{
+ body{background:white}.no-print,header,footer,.hide-print{display:none!important}
+ main{max-width:none;margin:0;padding:0}.card{border:0;box-shadow:none;padding:0;margin:0}
+ #resumeWrap{display:block!important}.resume{border:0;box-shadow:none;border-radius:0;padding:8mm 7mm}
+ @page{size:A4;margin:10mm}
+ .resume .rname{font-size:24pt}.resume .rrole{font-size:10pt}.resume .contact{font-size:9pt}
+ .resume h3{font-size:10pt}.resume p,.resume li{font-size:9pt;line-height:1.45}
+}
+</style>
+</head>
+<body>
+<header class="no-print">
+ <div class="brand"><div class="logo">▤</div><div>Currículo <span style="color:#ffd633">Fácil</span></div></div>
+ <p>Crie seu currículo profissional em poucos passos. Confira o resultado e gere um PDF pronto para impressão.</p>
+</header>
+<main>
+<section id="welcome" class="card no-print">
+ <div class="kicker">Autoatendimento • Demonstração</div>
+ <h1>Seu próximo emprego começa com um bom currículo.</h1>
+ <p class="muted">Preencha suas informações, escolha o que deseja destacar e veja seu currículo ganhar forma automaticamente.</p>
+ <div class="feature-list">
+  <div class="feature"><span>✍️</span>Preenchimento simples</div>
+  <div class="feature"><span>📄</span>Modelo profissional</div>
+  <div class="feature"><span>👀</span>Pré-visualização</div>
+  <div class="feature"><span>🖨️</span>PDF para imprimir</div>
+ </div>
+ <div class="notice">Demonstração funcional: os dados ficam neste navegador e não são enviados a um servidor. Pagamento e impressão automática ainda não estão conectados nesta versão.</div>
+ <button class="primary full" style="margin-top:16px" onclick="start()">Começar meu currículo <span>→</span></button>
+</section>
+
+<section id="wizard" class="card hidden no-print">
+ <div class="step-label"><span id="stepName">Dados pessoais</span><span id="stepCount">Etapa 1 de 4</span></div>
+ <div class="progress"><span id="progressBar" style="width:25%"></span></div>
+ <div id="step1" class="step">
+  <h2>Vamos começar por você</h2><p class="muted">Informe os dados que deseja mostrar no currículo.</p>
+  <label for="name">Nome completo *</label><input id="name" autocomplete="name" placeholder="Ex.: Maria da Silva" required>
+  <label for="role">Cargo ou área desejada *</label><input id="role" placeholder="Ex.: Auxiliar administrativo" required>
+  <div class="grid2"><div><label for="phone">Telefone</label><input id="phone" autocomplete="tel" placeholder="(65) 99999-9999"></div><div><label for="email">E-mail</label><input id="email" autocomplete="email" placeholder="voce@email.com"></div></div>
+  <label for="city">Cidade/UF</label><input id="city" placeholder="Ex.: Nova Mutum - MT">
+  <label for="objective">Objetivo profissional</label><textarea id="objective" placeholder="Conte brevemente o tipo de oportunidade que procura."></textarea>
+ </div>
+ <div id="step2" class="step hidden">
+  <h2>Experiência profissional</h2><p class="muted">Se ainda não trabalhou, pode deixar em branco ou informar experiências informais e projetos relevantes.</p>
+  <label for="experience">Experiências e atividades</label><textarea id="experience" style="min-height:150px" placeholder="Empresa — Cargo (período)&#10;• Principais atividades e responsabilidades&#10;&#10;Empresa — Cargo (período)&#10;• Principais atividades"></textarea>
+  <label for="skills">Habilidades</label><textarea id="skills" placeholder="Ex.: atendimento ao cliente, organização, informática, trabalho em equipe"></textarea>
+ </div>
+ <div id="step3" class="step hidden">
+  <h2>Formação e cursos</h2>
+  <label for="education">Formação acadêmica</label><textarea id="education" placeholder="Ex.: Ensino Médio completo — Escola (ano de conclusão)"></textarea>
+  <label for="courses">Cursos complementares e certificados</label><textarea id="courses" placeholder="Ex.: Informática básica, Excel, atendimento ao cliente"></textarea>
+  <label for="template">Estilo do currículo</label><select id="template"><option value="blue">Azul profissional</option><option value="classic">Clássico minimalista</option><option value="modern">Moderno com destaque</option></select>
+ </div>
+ <div id="step4" class="step hidden">
+  <h2>Confira antes de finalizar</h2><p class="muted">O currículo abaixo é montado com as informações que você preencheu. Se precisar, volte e edite os dados.</p>
+  <div id="previewInline"></div>
+  <div class="notice" style="margin-top:12px">Ao finalizar, você poderá abrir a impressão do navegador e escolher “Salvar como PDF”. O arquivo será formatado para papel A4.</div>
+ </div>
+ <div class="actions"><button class="secondary" id="backBtn" onclick="back()" disabled>← Voltar</button><button class="primary" id="nextBtn" onclick="next()">Continuar →</button></div>
+</section>
+
+<section id="result" class="card hidden">
+ <div class="no-print">
+  <div class="kicker">Currículo criado</div><h1>Seu currículo está pronto!</h1>
+  <p class="muted">Confira abaixo. Use “Baixar / imprimir PDF” para abrir as opções de impressão do seu dispositivo.</p>
+  <div class="actions"><button class="primary full" onclick="printCV()">⬇ Baixar / imprimir PDF</button></div>
+  <div class="actions"><button class="secondary full" onclick="editAgain()">Editar currículo</button><button class="outline full" onclick="newCV()">Novo currículo</button></div>
+  <div class="notice" style="margin-top:14px">Para salvar como PDF no computador, selecione “Salvar como PDF” na janela de impressão. No celular, escolha “Salvar em PDF” ou “Imprimir”, conforme as opções do navegador.</div>
+ </div>
+ <div id="resumeWrap" style="margin-top:18px"></div>
+</section>
+</main>
+<footer>Currículo Fácil • Protótipo demonstrativo • Nenhum pagamento é processado nesta versão.</footer>
+<script>
+const fields=['name','role','phone','email','city','objective','experience','skills','education','courses','template'];
+let current=1;
+function val(id){return document.getElementById(id).value.trim()}
+function start(){document.getElementById('welcome').classList.add('hidden');document.getElementById('wizard').classList.remove('hidden');showStep(1);window.scrollTo(0,0)}
+function showStep(n){
+ current=n;for(let i=1;i<=4;i++)document.getElementById('step'+i).classList.toggle('hidden',i!==n);
+ document.getElementById('stepName').textContent=['','Dados pessoais','Experiência profissional','Formação e cursos','Pré-visualização'][n];
+ document.getElementById('stepCount').textContent=`Etapa ${n} de 4`;
+ document.getElementById('progressBar').style.width=(n*25)+'%';
+ document.getElementById('backBtn').disabled=n===1;
+ document.getElementById('nextBtn').textContent=n===4?'Finalizar e gerar PDF':'Continuar →';
+ if(n===4)document.getElementById('previewInline').innerHTML=resumeHTML();
+}
+function next(){
+ if(current===1 && (!val('name')||!val('role'))){alert('Preencha seu nome completo e o cargo ou área desejada.');return}
+ if(current<4){showStep(current+1);window.scrollTo(0,0);return}
+ document.getElementById('wizard').classList.add('hidden');document.getElementById('result').classList.remove('hidden');
+ document.getElementById('resumeWrap').innerHTML=resumeHTML();window.scrollTo(0,0)
+}
+function back(){if(current>1)showStep(current-1);window.scrollTo(0,0)}
+function safe(s){return (s||'').replace(/[&<>"']/g,c=>({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]))}
+function lines(s){return safe(s).split(/\n+/).filter(x=>x.trim()).map(x=>`<li>${x.replace(/^[-•*]\s*/,'')}</li>`).join('')}
+function section(title,content,list=false){if(!content.trim())return '';return `<h3>${title}</h3>${list?`<ul>${lines(content)}</ul>`:content.split(/\n+/).map(x=>`<p>${safe(x)}</p>`).join('')}`}
+function resumeHTML(){
+ const style=val('template');const name=safe(val('name')||'Seu nome');const role=safe(val('role')||'Área profissional');
+ const accent=style==='classic'?'#374151':style==='modern'?'#0b7a75':'#1769d2';
+ return `<article class="resume" style="--resume-accent:${accent}"><h1 class="rname" style="color:#12345a">${name}</h1><div class="rrole" style="color:${accent}">${role}</div>
+ <div class="contact">${[val('phone'),val('email'),val('city')].filter(Boolean).map(safe).join(' &nbsp; • &nbsp; ')}</div>
+ ${section('Objetivo profissional',val('objective'))}
+ ${section('Experiência profissional',val('experience'),true)}
+ ${section('Formação acadêmica',val('education'))}
+ ${section('Cursos complementares',val('courses'),true)}
+ ${section('Habilidades',val('skills'),true)}
+ <p style="margin-top:18px;font-size:8px;color:#7a8797;border-top:1px solid #dbe4ef;padding-top:7px">Currículo gerado com Currículo Fácil</p></article>`
+}
+function printCV(){document.getElementById('resumeWrap').innerHTML=resumeHTML();window.print()}
+function editAgain(){document.getElementById('result').classList.add('hidden');document.getElementById('wizard').classList.remove('hidden');showStep(4);window.scrollTo(0,0)}
+function newCV(){if(!confirm('Começar um novo currículo? Os dados preenchidos serão apagados.'))return;fields.forEach(id=>{const e=document.getElementById(id);if(e)e.value=''});document.getElementById('result').classList.add('hidden');document.getElementById('wizard').classList.add('hidden');document.getElementById('welcome').classList.remove('hidden');showStep(1);window.scrollTo(0,0)}
+</script>
+</body>
+</html>

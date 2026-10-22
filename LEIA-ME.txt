@@ -1,0 +1,30 @@
+CURRÍCULO FÁCIL — MVP DEMONSTRATIVO
+
+O que funciona:
+- Interface responsiva para celular e computador
+- Fluxo guiado em 4 etapas
+- Formulário de dados pessoais, experiência, formação, cursos e habilidades
+- Pré-visualização gerada a partir dos dados preenchidos
+- Impressão / salvar como PDF em formato A4 via navegador
+- Três estilos visuais selecionáveis
+- Dados ficam no navegador; não há envio a servidor
+
+O que ainda NÃO está implementado:
+- Pagamentos Pix/cartão
+- Créditos de impressão
+- Impressão automática pela gráfica
+- Backend, banco de dados, login e painel administrativo
+- Hospedagem pública
+
+Como testar no computador:
+1. Extraia o ZIP.
+2. Abra a pasta e dê dois cliques em index.html (Chrome/Edge recomendado).
+3. Clique em “Começar meu currículo”, preencha as etapas e finalize.
+4. Clique em “Baixar / imprimir PDF”; selecione “Salvar como PDF”.
+
+Como demonstrar no celular:
+- Para a forma mais simples, publique index.html em uma hospedagem estática (por exemplo, GitHub Pages) e abra o link no celular.
+- Alternativamente, podemos configurar o acesso local pelo Wi-Fi da mesma rede, usando um computador como servidor.
+- Não use dados reais de clientes na demonstração; use dados fictícios.
+
+Este é um protótipo demonstrativo funcional, não o sistema comercial completo.
